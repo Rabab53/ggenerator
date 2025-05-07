@@ -16,13 +16,12 @@ if (quickGenomeSim) {
     inbred = TRUE,
     species = "WHEAT"
   )
-
-print(founderPop)
 }
+print(founderPop)
 
 SP = SimParam$new(founderPop)
 
-# Add SNP chip/aray (with markers that don't overlapping with QTL)
+# Add SNP chip/array (with markers that don't overlap with QTL)
 SP$restrSegSites(nQtl, max(nSnp))
 if (any(nSnp > 0)) {
   for (n in nSnp) {
@@ -30,7 +29,7 @@ if (any(nSnp > 0)) {
   }
 }
 
-# Add a traits such as yield (effects sampled from a Gaussian distribution)
+# Add a trait such as yield (effects sampled from a Gaussian distribution)
 SP$addTraitAEG(
   nQtlPerChr = nQtl,
   mean = initMeanG,
