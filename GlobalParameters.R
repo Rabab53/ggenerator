@@ -11,7 +11,7 @@ startTP = 10 # Year to start collecting genomic data
 quickGenomeSim = FALSE # it doesn't make much of a difference
 nChr = 16
 nQtl = 1000 # Number of QTL per chromosome
-nSnp = c(256, 1024000) # Number of SNP per chromosome
+nSnp = c(256, 170000) # Number of SNP per chromosome
 
 # ---- Initial parents mean and variance ----
 initMeanG = 1 # Initial mean of genetic values
