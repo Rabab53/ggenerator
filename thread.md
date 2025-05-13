@@ -1,5 +1,7 @@
 Note that the code currently assumes that SNP markers and QTL are two NON-OVERLAPPING sets of segregating sites. We can change this to overlapping at a later point. When we work with SNP arrays, it's quite likely that we do not have QTL included on the array. This means that we are trying to capture the QTL effects via their association with nearby SNP markers. With whole-genome sequencing data, like with k-mer data, we are more likely to have QTL in the data. This means that we have a chance to capture the QTL effects more directly.
+
 ------------------------------------------------
+
 As promised I took scripts of our past  wheat simulation  with AlphaSimR (see https://github.com/HighlanderLab/jbancic_alphasimr_plants/blob/main/01_LineBreeding/LineProgram.jpeg) and adapted it to the needs of our collaboration.
 
 The scripts are at https://www.dropbox.com/scl/fo/d3i2zvs2v8zhczd0brd1e/ACgnDIFSaI2LDCEn-t4ron0?rlkey=r3gem5i6o7zp0cw6ig51klcix&dl=0. This is all R script code and AlphaSimR can be installed from CRAN. It helps if your R installation is OpenMP enabled so we can parallelise some steps in the code (done automatically).
